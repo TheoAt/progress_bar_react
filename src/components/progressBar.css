@@ -1,0 +1,58 @@
+.steps {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    background-color: #f0f0f0;
+    border-radius: var(--spacing);
+    padding: var(--spacing);
+    margin-top: var(--spacing-medium);
+}
+
+.step {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    background-color: var(--light-color);
+    padding: var(--spacing);
+    border-radius: var(--spacing);
+    color: var(--outremer);
+    font-family: var(--secondary-font)
+}
+
+.step-progress-bar-container {
+    width: 100%;
+}
+
+.step.active {
+    background-color: var(--outremer);
+    color: var(--light-color);
+}
+
+.step-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--spacing-large);
+}
+
+.step-buttons-container button {
+    background-color: var(--outremer);
+    color: var(--light-color);
+    font-family: var(--secondary-font);
+    padding: var(--spacing);
+    font-size: var(--spacing-medium);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-left: var(--spacing);
+}
+
+.step-buttons-container button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
